@@ -85,4 +85,22 @@ DineX offers customization options for restaurants, bars, and cafes to incorpora
 ### Advertising Revenue:
 DineX provides opportunities for targeted advertising within its platform, allowing restaurants to promote specials, events, and promotions directly to their customers. Advertising slots could be sold on a per-impression or per-click basis, generating additional revenue for DineX.
 
+# Installation & Running
+
+## Backend
+```sh
+git clone https://github.com/akarshghildyal/DineX/
+cd DineX
+pip3 install -r requirements.txt
+uvicorn main:app --host=0.0.0.0 --port=8000
+```
+
+## Frontend
+```sh
+# Install nodejs and npm before
+cd client
+npm install
+npm run build
+npm start
+```
 
