@@ -61,7 +61,7 @@ Caterers interested in providing an interactive menu experience for event attend
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000.svg?&style=for-the-badge&logo=nextdotjs&logoColor=white"/>
   <img alt="Blender" src="https://img.shields.io/badge/Blender-F5792A.svg?style=for-the-badge&logo=blender&logoColor=white">
   <img alt="Model Viewer" src="https://img.shields.io/badge/ModelViewer-FEA116.svg?style=for-the-badge&logo=model-viewer&logoColor=blue">
-  <img alt="Python" src="https://img.shields.io/badge/Python-00FFC2.svg?style=for-the-badge&logo=model-viewer&logoColor=green">  
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white">
 </p>
 
 # Challenges Faced
