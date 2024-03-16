@@ -172,7 +172,6 @@ export default function Home() {
                         </PieChart>
                       </div>
                     </div>
-
                     
                   </div>
                 </div>

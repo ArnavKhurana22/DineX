@@ -32,20 +32,20 @@ class Feedback(BaseModel):
 
 data = {
     "aka-hotel": {
-        "name": "aka hotel",
+        "name": "Aka Hotel",
         "food": [
             {
                 "price": 100,
                 "calorie": 200,
-                "model": "burger",
+                "model": "/arduino_uno.glb",
                 "name": "burger",
                 "count": 0
             },
             {
                 "price": 200,
                 "calorie": 300,
-                "model": "pizza",
-                "name": "pizza",
+                "model": "/biryani.glb",
+                "name": "croissant",
                 "count": 0
             }
         ],
