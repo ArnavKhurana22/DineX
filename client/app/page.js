@@ -86,25 +86,25 @@ export default function Home() {
       )}
       { screen === 1 && (
         <div className="grid grid-cols-8 gap-2 h-screen">
-          <div className="w-full h-full  bg-slate-900 rounded-2xl col-span-2">
+          <div className="w-full h-full  bg-light rounded-2xl col-span-2">
             <div className="grid grid-cols-1 text-left gap-2 p-4">
-              <button className="bg-slate-800 text-white rounded-xl p-4 hover:scale-95 duration-300" onClick={() => setAdmin(1)}>General</button>
-              <button className="bg-slate-800 text-white rounded-xl p-4 hover:scale-95 duration-300" onClick={() => setAdmin(2)}>Past Orders</button>
-              <button className="bg-slate-800 text-white rounded-xl p-4 hover:scale-95 duration-300" onClick={() => setAdmin(3)}>Statistics</button>
-              <button className="bg-slate-800 text-white rounded-xl p-4 hover:scale-95 duration-300" onClick={() => setAdmin(4)}>Update</button>
+              <button className="bg-primary text-black rounded-xl p-4 hover:scale-95 duration-300" onClick={() => setAdmin(1)}>General</button>
+              <button className="bg-primary text-black rounded-xl p-4 hover:scale-95 duration-300" onClick={() => setAdmin(2)}>Past Orders</button>
+              <button className="bg-primary text-black rounded-xl p-4 hover:scale-95 duration-300" onClick={() => setAdmin(3)}>Statistics</button>
+              {/* <button className="bg-primary text-white rounded-xl p-4 hover:scale-95 duration-300" onClick={() => setAdmin(4)}>Update</button> */}
             </div>
           </div>
-          <div className="w-full h-full bg-slate-900 rounded-2xl col-span-6 p-4">
+          <div className="w-full h-full bg-base-300 rounded-2xl col-span-6 p-4">
             { admin === 1 && (
               <div className="">
                 <h1 className={orbitron.className + " text-6xl text-center p-4"}>Orders</h1>
                 <div className="grid grid-cols-1 place-items-center gap-2 w-full">
-                  <div className="bg-slate-950 p-4 rounded-2xl w-full">
+                  <div className="bg-orange-700 p-4 rounded-2xl w-full">
                     <h2 className={orbitron.className + " text-4xl text-center p-4"}>Pending</h2>
                     <div className="grid gap-2 grid-cols-3 overflow-y-scroll">
                       {orders.map((order, index) => {
                         return (
-                          <div className="bg-slate-800 rounded-xl p-2" key={index}>
+                          <div className="bg-primary rounded-xl p-2" key={index}>
                             <h3 className={" text-white p-2"}><span className="text-3xl">{order.name}</span> <br></br>➡️ Table: {order.table}</h3>
                             <button className="bg-slate-700 text-white p-2 rounded-xl" onClick={() => {
                               fetch(process.env.NEXT_PUBLIC_BACKEND_URL + "/live_data/aka-hotel/" + order._id, {
@@ -139,7 +139,7 @@ export default function Home() {
                     <div className="grid gap-2 grid-cols-3 overflow-y-scroll">
                       {pastOrders.map((order, index) => {
                         return (
-                          <div className="bg-slate-800 rounded-xl p-2" key={index}>
+                          <div className="bg-primary rounded-xl p-2" key={index}>
                             <h3 className={" text-white p-2"}><span className="text-3xl">{order.name}</span> <br></br>➡️ Table: {order.table}</h3>                            
                           </div>
                         )
@@ -156,16 +156,16 @@ export default function Home() {
                 <div className="grid grid-cols-1 place-items-center gap-2 w-full">
                   <div className="bg-slate-950 p-4 rounded-2xl w-full">
                     <div className="grid gap-2 grid-cols-3">
-                      <div className="bg-slate-800 rounded-xl p-2">
+                      <div className="bg-primary rounded-xl p-2">
                         <h3 className={" text-white p-2"}><span className="text-3xl">{live_data.length}</span> <br></br>➡️ Orders</h3>                            
                       </div>
-                      <div className="bg-slate-800 rounded-xl p-2">
+                      <div className="bg-primary rounded-xl p-2">
                         <h3 className={" text-white p-2"}><span className="text-3xl">{pastOrders.length}</span> <br></br>➡️ Completed Orders</h3>                            
                       </div>
-                      <div className="bg-slate-800 rounded-xl p-2">
+                      <div className="bg-primary rounded-xl p-2">
                         <h3 className={" text-white p-2"}><span className="text-3xl">{feedbacks?.length || 0}</span> <br></br>➡️ Feedbacks</h3>                            
                       </div>
-                      <div className="w-full h-full col-span-3 bg-slate-800 rounded-xl p-2 grid place-items-center">
+                      <div className="w-full h-full col-span-3 bg-primary rounded-xl p-2 grid place-items-center">
                         <PieChart width={400} height={400}>
                           <Pie dataKey="value" isAnimationActive={false} data={getCount(feedbacks)} cx="50%" cy="50%" outerRadius={150} fill="#2990ff" nameKey={"label"} />
                           <Tooltip />

@@ -21,6 +21,7 @@ class Food(BaseModel):
     calorie: int
     model: str
     name: str
+    recipe: list[str]
 
 class Hotel(BaseModel):
     food: list[Food]
@@ -37,16 +38,51 @@ data = {
             {
                 "price": 100,
                 "calorie": 200,
-                "model": "/arduino_uno.glb",
+                "model": "/burger.glb",
                 "name": "burger",
-                "count": 0
+                "recipe": [
+                    "Bun",
+                    "Patty",
+                    "Cheese",
+                    "Lettuce",
+                    "Tomato",
+                    "Onion",
+                    "Mayo"
+                ]
+            },
+            {
+                "price": 200,
+                "calorie": 300,
+                "model": "/pizza.glb",
+                "name": "pizza",
+                "recipe": [
+                    "Dough",
+                    "Sauce",
+                    "Cheese",
+                    "Toppings"
+                ]
             },
             {
                 "price": 200,
                 "calorie": 300,
                 "model": "/biryani.glb",
-                "name": "croissant",
-                "count": 0
+                "name": "biriyani",
+                "recipe": [
+                    "Rice",
+                    "Meat",
+                    "Spices"
+                ]
+            },
+            {
+                "price": 200,
+                "calorie": 300,
+                "model": "/french_fries.glb",
+                "name": "biriyani",
+                "recipe": [
+                    "Potato",
+                    "Salt",
+                    "Oil"
+                ]
             }
         ],
         "feedback": [
