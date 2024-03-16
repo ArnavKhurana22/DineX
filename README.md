@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="[https://raw.githubusercontent.com/akarshghildyal/3DUCAT0R5/main/Logo.png](https://github.com/akarshghildyal/DineX/blob/main/dineXlgo%20(1).png)" alt="Alternative Text" style="width:50%;">
+    <img src="https://raw.githubusercontent.com/akarshghildyal/DineX/main/dineXlgo%20(1).png" alt="Alternative Text" style="width:50%;">
 </div>
 
 
