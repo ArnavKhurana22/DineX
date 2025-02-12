@@ -104,3 +104,7 @@ npm run build
 npm start
 ```
 
+![image](https://github.com/user-attachments/assets/9aaff490-fc98-4491-8ba1-7a2c0449ecef)
+
+![image](https://github.com/user-attachments/assets/a358377a-5214-490e-8912-349e494bc602)
+
